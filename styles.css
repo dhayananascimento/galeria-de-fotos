@@ -11,6 +11,19 @@ body {
     background-color: #f1f1f1; 
 }
 
+h1 {
+    color: teal;
+    margin: 25px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 { 
+    margin: 20px 0px 10px;  
+    text-transform: capitalize;
+    border-bottom: 1px solid black; 
+}
+
 button {
     width: 50px;
     height: 50px;
@@ -31,7 +44,7 @@ button {
 
 .cabecalho span {
     color: teal;
-    margin: 0px 15px;
+    margin: 0px 10px;
     font-size: 25px;
     font-weight: 700;
 }
@@ -70,6 +83,39 @@ button {
     background-color: #333;
 }
 
+.bt-cabecalho {
+    display: flex !important;
+}
+
+.principal {
+    width: 100%;
+    padding: 10px;
+}
+
+.secao { 
+    display: grid;
+    row-gap: 10px;  
+    column-gap: 10px;  
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.container-imagem {
+    width: 100%;
+    height: 100%;
+}
+
+.container-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .secao {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
 @media (max-width: 768px) {
     .bt-navegacao {
         display: block;
@@ -96,8 +142,20 @@ button {
         height: 100%;
         justify-content: center;
     }
+
+    .secao {
+        grid-template-columns: auto auto auto;
+    }
 }
 
-.bt-cabecalho {
-    display: flex;
+@media (max-width: 600px) {
+    .secao {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .secao {
+        grid-template-columns: auto;
+    }
 }
