@@ -110,6 +110,46 @@ button {
     object-fit: cover;
 }
 
+.rodape {
+    width: 100%;
+    padding: 25px 10px;
+    background-color: #333;
+
+    display: flex;
+    justify-content: center;
+}
+
+.rodape a {
+    margin: 10px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: teal;
+}
+
+.rodape a i {
+    font-size: 30px;
+}
+
+.bt-topo {
+    right: 30px;
+    bottom: 30px;
+    color: #fff;
+    position: fixed;
+    font-size: 16px;
+    background-color: teal;
+    
+    z-index: 50;
+    display: none;
+}
+
+.bt-topo:hover {
+    background-color: #444;
+}
+
 @media (max-width: 1024px) {
     .secao {
         grid-template-columns: auto auto auto auto;

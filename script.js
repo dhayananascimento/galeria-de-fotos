@@ -159,11 +159,14 @@ const imagens = [
 
 const bt_navegacao = document.getElementById("bt-navegacao");
 const navegacao = document.getElementById("navegacao");
+const bt_topo = document.getElementById("bt-topo");
 
-bt_navegacao.addEventListener("click", () => navegacao.classList.toggle("bt-cabecalho"));
-navegacao.addEventListener("click", () => navegacao.classList.toggle("bt-cabecalho"));
+const cabecalho = () => {
+  bt_navegacao.addEventListener("click", () => navegacao.classList.toggle("bt-cabecalho"));
+  navegacao.addEventListener("click", () => navegacao.classList.toggle("bt-cabecalho"));
+}
 
-const carregaItensSecao = (id) => {
+const carregaSecao = (id) => {
     let secao = document.getElementById(id);
 
     let container = document.createElement("div");
@@ -190,9 +193,24 @@ const carregaItensSecao = (id) => {
     secao.appendChild(container);
 }
 
-const carregaSecoes = () => {
+const secoes = () => {
     let secao = document.querySelectorAll("section");
-    secao.forEach(element =>  carregaItensSecao(element.id));
+    secao.forEach(element =>  carregaSecao(element.id));
 }
 
-carregaSecoes();
+const topo = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+const rolamento = () => {
+  if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60)
+    bt_topo.style.display = "block";
+  else
+    bt_topo.style.display="none";
+    
+}
+
+window.onscroll = () => rolamento();
+cabecalho();
+secoes();
