@@ -25,7 +25,7 @@ Este é um simples projeto com a finalidade de treinar habilidades relativa as l
 * CSS
 
 ## Executar
-**Para executar este pojeto na sua máquina, siga as intruções:**
+**Para executar este projeto na sua máquina, siga as instruções:**
 * execute o seguinte comando no seu terminal: 
 > $ git clone https://github.com/dhayananascimento/galeria-de-fotos.git
 * abra a pasta que será  criada
