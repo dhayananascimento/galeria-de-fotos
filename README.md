@@ -10,8 +10,6 @@ Este é um simples projeto com a finalidade de treinar habilidades relativa as l
         <td>
             <img src="./imagens/img-2.png" alt= "imagem 2">
         </td>
-    </tr>
-    <tr>
         <td>
             <img src="./imagens/img-3.png" alt= "imagem 3">        
         </td>
@@ -29,6 +27,6 @@ Este é um simples projeto com a finalidade de treinar habilidades relativa as l
 ## Executar
 **Para executar este pojeto na sua maquina, siga as intruções:**
 * execute o seguinte comando no seu terminal: 
->> $ git clone https://github.com/dhayananascimento/galeria-de-fotos.git
+> $ git clone https://github.com/dhayananascimento/galeria-de-fotos.git
 * abra a pasta que será  criada
 * abra o arquivo "index.html" com o navegador de sua preferência
