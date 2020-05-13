@@ -1,5 +1,5 @@
 # Galeria de fotos
-Este é um simples projeto com a finalidade de treinar habilidades relativa as linguagens **JavaScript**,**HTML** e **CSS**. O projeto consiste em uma galeria de fotos **responsiva** que redireciona o usuário para a seção desejada. Qualquer sugestão de melhoria será muito bem-vinda :)
+Este é um simples projeto com a finalidade de treinar habilidades relativa as linguagens **JavaScript**, **HTML** e **CSS**. O projeto consiste em uma galeria de fotos responsiva que redireciona o usuário para a seção desejada de acordo com o item escolhido no menu. Qualquer sugestão de melhoria de código será muito bem-vinda :)
 
 ## Layout
 <table >
