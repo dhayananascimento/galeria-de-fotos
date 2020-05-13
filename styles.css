@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap');
+
 * {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif; 
     box-sizing: border-box;
+    letter-spacing: 2px;
     outline: 0;
     padding: 0;
     margin: 0;
 }
 
+html { 
+    scroll-behavior: smooth; 
+}
+
 body {
     width: 100%;
-    background-color: #f1f1f1; 
+    background-color: #fdfdfd; 
+}
+
+a {
+    transition: all 0.4s;
 }
 
 h1 {
@@ -46,7 +57,7 @@ button {
     color: teal;
     margin: 0px 10px;
     font-size: 25px;
-    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .navegacao {
@@ -108,8 +119,13 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease-in;
 }
 
+.container-imagem img:hover {
+    transform: scale(1.1); 
+}
+ 
 .rodape {
     width: 100%;
     padding: 25px 10px;
@@ -140,6 +156,7 @@ button {
     color: #fff;
     position: fixed;
     font-size: 16px;
+    transition: all 0.4s;
     background-color: teal;
     
     z-index: 50;

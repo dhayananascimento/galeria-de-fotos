@@ -163,7 +163,10 @@ const bt_topo = document.getElementById("bt-topo");
 
 const cabecalho = () => {
   bt_navegacao.addEventListener("click", () => navegacao.classList.toggle("bt-cabecalho"));
-  navegacao.addEventListener("click", () => navegacao.classList.toggle("bt-cabecalho"));
+  navegacao.addEventListener("click", () => {
+    if(window.innerWidth <= 768)
+      navegacao.classList.toggle("bt-cabecalho");
+  });
 }
 
 const carregaSecao = (id) => {
