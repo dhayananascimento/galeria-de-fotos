@@ -1,5 +1,5 @@
 # Galeria de fotos
-Este é um simples projeto com a finalidade de treinar habilidades relativa as linguagens JavaScript, HTML e CSS.
+Este é um simples projeto com a finalidade de treinar habilidades relativa as linguagens **JavaScript**,**HTML** e **CSS**. O projeto consiste em uma galeria de fotos **responsiva** que redireciona o usuário para a seção desejada. Qualquer sugestão de melhoria será muito bem-vinda :)
 
 ## Layout
 <table >
@@ -25,7 +25,7 @@ Este é um simples projeto com a finalidade de treinar habilidades relativa as l
 * CSS
 
 ## Executar
-**Para executar este pojeto na sua maquina, siga as intruções:**
+**Para executar este pojeto na sua máquina, siga as intruções:**
 * execute o seguinte comando no seu terminal: 
 > $ git clone https://github.com/dhayananascimento/galeria-de-fotos.git
 * abra a pasta que será  criada
