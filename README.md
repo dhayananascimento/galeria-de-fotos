@@ -1,23 +1,8 @@
 # Galeria de fotos
-Este é um simples projeto com a finalidade de treinar habilidades relativa as linguagens **JavaScript**, **HTML** e **CSS**. O projeto consiste em uma galeria de fotos responsiva que redireciona o usuário para a seção desejada de acordo com o item escolhido no menu. Qualquer sugestão de melhoria de código será muito bem-vinda :)
+Este é um simples projeto com a finalidade de treinar habilidades relativa as linguagens **JavaScript**, **HTML** e **CSS**. O projeto consiste em uma galeria de fotos responsiva com paginacão. Qualquer sugestão de melhoria de código será muito bem-vinda :)
 
 ## Layout
-<table >
-    <tr>
-        <td>
-            <img src="./imagens/img-1.png" alt= "imagem 1">     
-        </td>
-        <td>
-            <img src="./imagens/img-2.png" alt= "imagem 2">
-        </td>
-        <td>
-            <img src="./imagens/img-3.png" alt= "imagem 3">        
-        </td>
-        <td>
-            <img src="./imagens/img-4.png" alt= "imagem 4"> 
-        </td>
-    </tr>
-</table>
+<img src="./imagens/galeria.gif" alt= "imagem galeria">     
 
 ## Linguagens
 * JavaScript

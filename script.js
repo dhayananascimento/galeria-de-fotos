@@ -128,9 +128,48 @@ const dados = [
 
 
 const botaoTopo = document.getElementById("botaoTopo")
+const containerPagina = document.getElementById("containerPaginas")
 const containerGaleria = document.getElementById("containerGaleria")
 
+let limitePaginas = 9
+let paginaAtual = 0
+
+function paginacao() {
+  let paginas = parseInt(dados.length/limitePaginas)
+  let totalPaginas = (dados.length%limitePaginas) == 0 ? paginas : ++paginas 
+
+  exibePaginacao(totalPaginas)
+}
+
+function exibePaginacao(totalPaginas) {
+  containerPagina.innerHTML = ""
+
+  for (let i = 0; i < totalPaginas; i++) { 
+    let botao = document.createElement("button")
+    botao.appendChild(document.createTextNode(i + 1))
+
+    paginaAtual == i ? botao.classList.add("ativo") : null
+    
+    botao.addEventListener("click", () => {
+      paginaAtual = i
+      galeria()
+    })
+    containerPagina.appendChild(botao)
+  }
+}
+
 function galeria() {
+  let minimoPaginas = paginaAtual * limitePaginas
+  let maximoPaginas = minimoPaginas + limitePaginas
+
+  itensPaginaAtual = dados.slice(minimoPaginas, maximoPaginas)
+  exibeGaleria(itensPaginaAtual)
+  paginacao()
+}
+
+function exibeGaleria(dados) {
+    containerGaleria.innerHTML = ""
+
     dados.forEach((element) => {
       let container = document.createElement("div")
       container.classList.add("containerImagem")
